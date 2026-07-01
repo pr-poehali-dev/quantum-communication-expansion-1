@@ -1,9 +1,10 @@
 import { Hero3DWebGL as Hero3D } from "@/components/hero-webgl"
 import { FeaturesSection } from "@/components/features-section"
-import { TechnologySection } from "@/components/technology-section"
 import { ApplicationsTimeline } from "@/components/applications-timeline"
-import { AboutSection } from "@/components/about-section"
-import { SafetySection } from "@/components/safety-section"
+import { NewsSection } from "@/components/news-section"
+import { TournamentsSection } from "@/components/tournaments-section"
+import { ChampionshipsSection } from "@/components/championships-section"
+import { GallerySection } from "@/components/gallery-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { FAQSection } from "@/components/faq-section"
 import { CTASection } from "@/components/cta-section"
@@ -19,10 +20,11 @@ export default function Index() {
         <section id="about">
           <FeaturesSection />
         </section>
-        <TechnologySection />
         <ApplicationsTimeline />
-        <AboutSection />
-        <SafetySection />
+        <NewsSection />
+        <TournamentsSection />
+        <ChampionshipsSection />
+        <GallerySection />
         <TestimonialsSection />
         <section id="faq">
           <FAQSection />
