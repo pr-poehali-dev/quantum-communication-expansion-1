@@ -3,75 +3,75 @@ import { Timeline } from "@/components/ui/timeline"
 export function ApplicationsTimeline() {
   const data = [
     {
-      title: "Медицинское восстановление",
+      title: "Начальная подготовка",
       content: (
         <div>
           <p className="text-white text-sm md:text-base font-normal mb-6 leading-relaxed">
-            Революционное лечение паралича, травм спинного мозга и нейродегенеративных заболеваний. Восстановление
-            моторных функций и независимости миллионам людей по всему миру.
+            Первый шаг в спорте: базовая физическая форма, техника и знакомство с дисциплиной клуба.
+            Индивидуальный подход к каждому новичку любого возраста.
           </p>
           <div className="space-y-3">
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Восстановление при тетра- и параплегии
+            <div className="flex items-center gap-3 text-[#d6a54a] text-sm">
+              <div className="w-2 h-2 bg-[#d6a54a] rounded-full"></div>
+              Общая физическая подготовка (ОФП)
             </div>
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Контроль симптомов БАС и Паркинсона
+            <div className="flex items-center gap-3 text-[#d6a54a] text-sm">
+              <div className="w-2 h-2 bg-[#d6a54a] rounded-full"></div>
+              Постановка базовой техники
             </div>
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Ускорение реабилитации после инсульта
+            <div className="flex items-center gap-3 text-[#d6a54a] text-sm">
+              <div className="w-2 h-2 bg-[#d6a54a] rounded-full"></div>
+              Воспитание дисциплины и режима
             </div>
           </div>
         </div>
       ),
     },
     {
-      title: "Когнитивное усиление",
+      title: "Спортивное мастерство",
       content: (
         <div>
           <p className="text-white text-sm md:text-base font-normal mb-6 leading-relaxed">
-            Усиление человеческого интеллекта, памяти и способности к обучению. Прямые нейроинтерфейсы для
-            улучшенной когнитивной производительности и обработки информации.
+            Углублённые тренировки под руководством опытных наставников. Развитие силы, выносливости и
+            тактического мышления для выхода на соревновательный уровень.
           </p>
           <div className="space-y-3">
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Улучшение памяти и оптимизация запоминания
+            <div className="flex items-center gap-3 text-[#d6a54a] text-sm">
+              <div className="w-2 h-2 bg-[#d6a54a] rounded-full"></div>
+              Работа над техникой и тактикой
             </div>
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Ускоренное обучение и освоение навыков
+            <div className="flex items-center gap-3 text-[#d6a54a] text-sm">
+              <div className="w-2 h-2 bg-[#d6a54a] rounded-full"></div>
+              Силовая и функциональная подготовка
             </div>
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Перевод языков в реальном времени
+            <div className="flex items-center gap-3 text-[#d6a54a] text-sm">
+              <div className="w-2 h-2 bg-[#d6a54a] rounded-full"></div>
+              Спарринги и командная работа
             </div>
           </div>
         </div>
       ),
     },
     {
-      title: "Цифровая интеграция",
+      title: "Турниры и разряды",
       content: (
         <div>
           <p className="text-white text-sm md:text-base font-normal mb-6 leading-relaxed">
-            Бесшовное соединение человеческого сознания с цифровыми системами. Управление устройствами,
-            доступ к информации и общение силой мысли.
+            Участие в турнирах и чемпионатах, борьба за призовые места и получение спортивных разрядов.
+            Путь от воспитанника клуба до настоящего чемпиона.
           </p>
           <div className="space-y-3">
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Управление устройствами силой мысли
+            <div className="flex items-center gap-3 text-[#d6a54a] text-sm">
+              <div className="w-2 h-2 bg-[#d6a54a] rounded-full"></div>
+              Внутренние и выездные турниры
             </div>
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Прямой доступ к интернету и облаку
+            <div className="flex items-center gap-3 text-[#d6a54a] text-sm">
+              <div className="w-2 h-2 bg-[#d6a54a] rounded-full"></div>
+              Участие в чемпионатах региона
             </div>
-            <div className="flex items-center gap-3 text-red-400 text-sm">
-              <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              Телепатические сети связи
+            <div className="flex items-center gap-3 text-[#d6a54a] text-sm">
+              <div className="w-2 h-2 bg-[#d6a54a] rounded-full"></div>
+              Присвоение спортивных разрядов
             </div>
           </div>
         </div>
@@ -80,13 +80,13 @@ export function ApplicationsTimeline() {
   ]
 
   return (
-    <section id="applications" className="py-20 bg-black">
+    <section id="applications" className="py-20 bg-[#050608]">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
         <div className="text-center mb-16">
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-6">Трансформирующие применения</h2>
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-white mb-6 uppercase">Путь спортсмена</h2>
           <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Технологии SynapseAI открывают беспрецедентные возможности для усиления человека, медицинского
-            лечения и цифровой интеграции в множестве областей.
+            От первой тренировки до чемпионского пьедестала — клуб «Патриот» проведёт вас через все этапы
+            спортивного роста.
           </p>
         </div>
 

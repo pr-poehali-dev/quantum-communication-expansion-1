@@ -72,8 +72,8 @@ const Scene = () => {
         // Flow effect based on progress
         float flow = 1.0 - smoothstep(0.0, 0.02, abs(depth - uProgress));
 
-        // Red scanning overlay
-        vec3 mask = vec3(dot * flow * 10.0, 0.0, 0.0);
+        // Gold scanning overlay
+        vec3 mask = vec3(dot * flow * 10.0) * vec3(0.84, 0.65, 0.29);
 
         // Combine effects
         vec3 final = baseColor.rgb + mask;
@@ -114,8 +114,8 @@ const Scene = () => {
 }
 
 export const Hero3DWebGL = () => {
-  const titleWords = "Synapse AI".split(" ")
-  const subtitle = "Нейроинтерфейсы нового поколения."
+  const titleWords = "ПАТРИОТ".split(" ")
+  const subtitle = "Спортивный клуб · Турниры · Чемпионаты · Подготовка спортсменов"
   const [visibleWords, setVisibleWords] = useState(0)
   const [subtitleVisible, setSubtitleVisible] = useState(false)
   const [delays, setDelays] = useState<number[]>([])
@@ -137,17 +137,17 @@ export const Hero3DWebGL = () => {
   }, [visibleWords, titleWords.length])
 
   return (
-    <div className="h-screen bg-black relative overflow-hidden">
+    <div className="h-screen bg-[#050608] relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none z-10">
-        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
-        <div className="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-black to-transparent" />
-        <div className="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-black to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#050608] to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#050608] to-transparent" />
+        <div className="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-[#050608] to-transparent" />
+        <div className="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-[#050608] to-transparent" />
       </div>
 
       <div className="h-screen uppercase items-center w-full absolute z-[60] pointer-events-none px-10 flex justify-center flex-col">
-        <div className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold font-orbitron">
-          <div className="flex space-x-2 lg:space-x-6 overflow-hidden text-white">
+        <div className="text-5xl md:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold font-orbitron">
+          <div className="flex space-x-2 lg:space-x-6 overflow-hidden text-[#d6a54a]">
             {titleWords.map((word, index) => (
               <div
                 key={index}
@@ -173,6 +173,17 @@ export const Hero3DWebGL = () => {
             {subtitle}
           </div>
         </div>
+        <div
+          className={subtitleVisible ? "fade-in-subtitle mt-8 pointer-events-auto" : "mt-8 pointer-events-auto"}
+          style={{ opacity: subtitleVisible ? undefined : 0 }}
+        >
+          <a
+            href="#applications"
+            className="inline-block bg-[#d6a54a] hover:bg-[#c4923a] text-[#08111d] font-orbitron font-bold text-sm md:text-lg px-8 py-3 md:px-10 md:py-4 rounded-md transition-colors duration-200 uppercase tracking-wider"
+          >
+            Присоединиться
+          </a>
+        </div>
       </div>
 
       <Canvas
@@ -183,7 +194,7 @@ export const Hero3DWebGL = () => {
           powerPreference: "high-performance",
         }}
         camera={{ position: [0, 0, 1] }}
-        style={{ background: "#000000" }}
+        style={{ background: "#050608" }}
       >
         <Scene />
       </Canvas>

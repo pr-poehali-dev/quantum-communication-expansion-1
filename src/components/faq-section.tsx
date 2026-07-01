@@ -3,55 +3,55 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export function FAQSection() {
   const faqs = [
     {
-      question: "Насколько безопасна процедура SynapseAI?",
+      question: "С какого возраста можно заниматься?",
       answer:
-        "Да, процедура выполняется прецизионным хирургическим роботом и прошла обширное тестирование. Все материалы биосовместимы и одобрены FDA для медицинского применения.",
+        "Мы принимаем детей с 6 лет, а также подростков и взрослых. Для каждого возраста своя группа и программа подготовки.",
     },
     {
-      question: "Сколько длится операция?",
+      question: "Нужна ли специальная подготовка для начала?",
       answer:
-        "Малоинвазивная процедура обычно занимает 2-3 часа и проводится под местной анестезией с седацией.",
+        "Нет. Мы берём новичков без опыта — тренеры подберут нагрузку под ваш уровень и помогут освоить базу с нуля.",
     },
     {
-      question: "Можно ли удалить устройство?",
+      question: "Что нужно для первой тренировки?",
       answer:
-        "Да, SynapseAI разработан полностью обратимым. Устройство можно безопасно удалить при необходимости, хотя это требуется редко.",
+        "Спортивная форма, сменная обувь и вода. Всё остальное снаряжение для новичков есть в клубе.",
     },
     {
-      question: "Какие ощущения при использовании SynapseAI?",
+      question: "Как проходят турниры клуба?",
       answer:
-        "Пользователи отмечают, что управление устройствами силой мысли ощущается естественно и интуитивно после короткого периода обучения. От самого импланта нет физических ощущений.",
+        "Мы регулярно проводим внутренние соревнования и выезжаем на городские и региональные чемпионаты. Расписание публикуется в разделе «Турниры».",
     },
     {
-      question: "Как долго работает батарея?",
+      question: "Можно ли получить спортивный разряд?",
       answer:
-        "Устройство заряжается беспроводным способом и работает полный день на одном заряде. Зарядка выполняется внешним устройством, размещаемым рядом с головой.",
+        "Да. При регулярных тренировках и участии в официальных соревнованиях наши воспитанники получают спортивные разряды.",
     },
     {
-      question: "Кто может получить SynapseAI?",
+      question: "Как записаться в клуб?",
       answer:
-        "В настоящее время мы фокусируемся на людях с тяжелым параличом. Соответствие определяется через комплексную медицинскую оценку.",
+        "Нажмите «Присоединиться» или позвоните нам по телефону +7-984-105-91-17 — мы расскажем подробности и запишем на пробную тренировку.",
     },
   ]
 
   return (
-    <section className="py-24 bg-black">
+    <section className="py-24 bg-[#050608]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-orbitron">Частые вопросы</h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto font-space-mono">
-            Ответы на популярные вопросы о технологии SynapseAI, безопасности и опыте пациентов.
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-orbitron uppercase">Частые вопросы</h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto font-geist">
+            Ответы на популярные вопросы о тренировках, записи и жизни клуба.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-red-500/20 mb-4">
-                <AccordionTrigger className="text-left text-lg font-semibold text-white hover:text-red-400 font-orbitron px-6 py-4">
+              <AccordionItem key={index} value={`item-${index}`} className="border-[#d6a54a]/20 mb-4">
+                <AccordionTrigger className="text-left text-lg font-semibold text-white hover:text-[#d6a54a] font-orbitron px-6 py-4">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-300 leading-relaxed px-6 pb-4 font-space-mono">
+                <AccordionContent className="text-gray-300 leading-relaxed px-6 pb-4 font-geist">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

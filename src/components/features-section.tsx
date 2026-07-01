@@ -1,42 +1,43 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Icon from "@/components/ui/icon"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Дисциплина и характер",
+    description: "Воспитываем силу воли, ответственность и уважение. Спорт формирует настоящий мужской характер.",
+    icon: "Shield",
+    badge: "Характер",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
+    title: "Профессиональные тренеры",
+    description: "Опытные наставники, мастера спорта и чемпионы, которые доведут вас до результата.",
+    icon: "Medal",
+    badge: "Опыт",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
+    title: "Турниры и соревнования",
+    description: "Регулярные внутренние и выездные турниры — реальная практика и путь к спортивным разрядам.",
+    icon: "Trophy",
+    badge: "Практика",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
+    title: "Физическая подготовка",
+    description: "Комплексные тренировки на силу, выносливость и технику для бойцов любого уровня.",
+    icon: "Dumbbell",
+    badge: "Форма",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
+    title: "Патриотическое воспитание",
+    description: "Любовь к Родине, командный дух и готовность защищать — основа нашего клуба.",
+    icon: "Flag",
+    badge: "Ценности",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    title: "Для всех возрастов",
+    description: "Группы для детей, подростков и взрослых. Начать путь в спорте никогда не поздно.",
+    icon: "Users",
+    badge: "Все группы",
   },
 ]
 
@@ -45,9 +46,9 @@ export function FeaturesSection() {
     <section className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-orbitron uppercase">Почему выбирают «Патриот»</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Сила, дисциплина и результат — то, что мы даём каждому спортсмену
           </p>
         </div>
 
@@ -60,19 +61,14 @@ export function FeaturesSection() {
             >
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
-                  </span>
+                  <div className="w-12 h-12 rounded-lg bg-[#d6a54a]/10 flex items-center justify-center text-[#d6a54a]">
+                    <Icon name={feature.icon} size={26} fallback="Shield" />
+                  </div>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
                   </Badge>
                 </div>
-                <CardTitle className="text-xl font-bold text-card-foreground">{feature.title}</CardTitle>
+                <CardTitle className="text-xl font-bold text-card-foreground font-orbitron">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-muted-foreground leading-relaxed">

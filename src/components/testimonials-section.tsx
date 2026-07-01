@@ -3,25 +3,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const testimonials = [
   {
-    name: "Елена Родригес",
-    role: "Директор по нейронауке, Quantum Dynamics",
-    avatar: "/professional-woman-scientist.png",
+    name: "Дмитрий Соколов",
+    role: "Воспитанник клуба, 3 года в «Патриоте»",
+    avatar: "/placeholder-user.jpg",
     content:
-      "SynapseAI изменил наш подход к нейрореабилитации. Результаты пациентов улучшились на 340% после внедрения.",
+      "Пришёл обычным парнем — сейчас у меня разряд и три победы на турнирах. Тренеры выкладываются на 100%.",
   },
   {
-    name: "Маркус Уильямс",
-    role: "Руководитель исследований, Stellar Analytics",
-    avatar: "/cybersecurity-expert-man.jpg",
+    name: "Анна Петрова",
+    role: "Мама воспитанника",
+    avatar: "/placeholder-user.jpg",
     content:
-      "Точность и протоколы безопасности не имеют аналогов. Мы значительно ускорили клинические испытания с платформой SynapseAI.",
+      "Сын изменился: стал дисциплинированным, собранным и уверенным в себе. Спасибо клубу за настоящее мужское воспитание.",
   },
   {
-    name: "Анна Ковальски",
-    role: "Вице-президент по разработке, Nova Industries",
-    avatar: "/asian-woman-tech-developer.jpg",
+    name: "Сергей Иванов",
+    role: "Взрослая группа, любитель",
+    avatar: "/placeholder-user.jpg",
     content:
-      "Интеграция прошла безупречно. Адаптивные алгоритмы понимают намерения пользователя лучше любой системы, что мы тестировали.",
+      "Отличная атмосфера и сильная команда. Здесь тренируются на результат, а поддержка чувствуется с первого дня.",
   },
 ]
 
@@ -30,9 +30,9 @@ export function TestimonialsSection() {
     <section className="py-24 px-6 bg-card">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют лидеры</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-card-foreground mb-4 font-orbitron uppercase">Отзывы наших спортсменов</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Что говорят лидеры индустрии о нашей революционной технологии
+            Что говорят воспитанники клуба и их родители
           </p>
         </div>
 
